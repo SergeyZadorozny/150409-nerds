@@ -3,35 +3,148 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styl.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
 </head>
 <body>
-	<div class="top_header" >
-		<div class="layout-position">
+	<header class="top_header" >
+		<div class="layout_position">
 			<div class="top_logo"></div>
-			<ul class="top_menu right_menu">
-				<li><a href="#">корзина</a></li>
-			</ul>
-			<ul class="top_menu left_menu">
-				<li><a href="#">студия</a></li>
-				<li><a href="#">клиенты</a></li>
-				<li><a href="#">магазин</a></li>
-				<li><a href="#">контакты</a></li>
-			</ul>
-		</div>
-		<div class="side_bar layout-position">
-		<h1>Долго,дорого,<br>скурпулёзно.</h1>
-			
+			<div class="top_menu right_menu">
+				<a href="#">корзина</a>
+			</div>	
+			<nav class="top_menu left_menu">
+				<ul>
+					<li><a href="#">студия</a></li>
+					<li><a href="#">клиенты</a></li>
+					<li><a href="#">магазин</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+			<section class="index_slider_1">
+			<b class="slide_title">Долго,дорого,скурпулёзно.</b>
 			<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения. </p>
-			<div class="but_more"><a href="#">Узнать больше</a>
+			<div class="bott_block_slider">
+				<div class="but_more">
+					<a href="#">Узнать больше</a>
+				</div>
+				<div class="page_areabott">
+					<ul class="pagination">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="radio_next">
-				<input type="radio" checked name="next_slide" value="s1">
-				<input type="radio" name="next_slide" value="s2">
-				<input type="radio" name="next_slide" value="s3">
+		</section>
+		<section class="index_slider_2">
+			<b class="slide_title">Любите ли вы математику, как любим ее мы?</b>
+			<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+			<div class="bott_block_slider">
+				<div class="but_more">
+					<a href="#">Узнать больше</a>
+				</div>
+				<div class="page_areabott">
+					<ul class="pagination">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
 			</div>
+		</section>
+		<section class="index_slider_3">
+			<b class="slide_title">Только наркотики, только хардкор!</b>
+			<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+			<div class="bott_block_slider">
+				<div class="but_more">
+					<a href="#">Узнать больше</a>
+				</div>
+				<div class="page_areabott">
+					<ul class="pagination">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		</div>
-	</div>
-</body>
-</html>
+	</header>
+	<main>
+		<div class="layout-position">
+			<section class="services">
+				<div class="column">
+					<img src="../2/img/content_2.png" width="240px" height="124px" alt="ewqwe">
+					<h2>Веб-сайты</h2>
+					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<div class="btn_sale btn_1"><a href="#">заказать</a></div>
+				</div>
+				<div class="column">
+					<img src="../2/img/content_1.png" width="240px" height="124px" alt="ewqwe">
+					<h2>Приложения</h2>
+					<p>Покорите топ-10 приложений
+						в AppStrore и Google Play</p>
+						<div class="btn_sale btn_2"><a href="#">заказать</a></div>
+					</div>
+					<div class="column">
+						<img src="../2/img/content_3.png" width="240px" height="124px" alt="ewqwe">
+						<h2>Презентации</h2>
+						<p>Вы даже не подозреваете, 
+							насколько вы изумительны!</p>
+							<div class="btn_sale btn_3"><a href="#">заказать</a></div>
+						</div>
+					</section>
+					<article class="about_us">
+						<header class="about_us_head">
+							<h1>Мы — маленькая, но гордаядизайн-студия из Краснодара.
+							</h1>
+							<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+							<img src="img/bott_logo" width="368" height="204" alt="">
+						</header>
+						<section class="content">
+							<ul>
+								<li class="about_us_caption">Выполняем заказы на разработку:</li>
+								<li>Веб-сайтов любой сложности</li>
+								<li>Мобильных приложений для iOS и Android</li>
+								<li>Слайдшоу и видео для корпоративных презентаций</li>
+							</ul>
+							<ul>
+								<li class="about_us_caption">Как Мы работаем:</li>
+								<li>С самоотдачей 146%</li>
+								<li>Соблюдая сроки на 100%</li>
+								<li>По предоплате 50%</li>
+							</ul>
+						</section>
+						<div class="clients">
+							<img src="img/client1" width="199" height="68"alt="">
+							<img src="img/client2" width="199" height="68"alt="">
+							<img src="img/client3" width="199" height="68"alt="">
+						</div>
+					</article>
+				</div>
+				<div class="map">
+					<div class="adress">
+						<div class="layout_position">
+							<b class="map_adr">NЁRDS DESIGN STUDIO</b>
+							<p>191186, Санкт-Петербург, 
+								ул. Б. Конюшенная, д. 19/8
+								<span class="phon">тел. +7 (812) 275-75-75</span>  
+							</p>
+							<a class="btn" href="#">Напишите нам</a>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="main_footer">
+				<div class="layout_position">
+					<section class="footer_sosial">
+						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+						<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+						<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					</section>
+					<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</footer>
+		</body>
+		</html>
