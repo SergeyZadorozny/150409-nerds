@@ -5,7 +5,7 @@
 	<title>HTML Academy: Нёрдс</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="top_header" >
@@ -15,7 +15,7 @@
 				  <img src="img/top_logo.png" width="139" height="56" alt="Нёрдс">
 				</div>
 				<div class="right_menu">
-					<a href="#">корзина</a>
+					<a class="basket" href="#">корзина</a>
 				</div>	
 				<nav class="left_menu">
 					<ul>
@@ -27,35 +27,42 @@
 				</nav>
 			</div>
 			<div class="index_slider">
-				<section class="slide">
+			  <input type="radio" id="slide_1" name="toggle" checked>
+				<input type="radio" id="slide_2" name="toggle">
+				<input type="radio" id="slide_3" name="toggle">
+				<div class="slider_controls">
+					<label for="slide_1"></label>
+					<label for="slide_2"></label>
+					<label for="slide_3"></label>
+				</div>
+
+				  <section class="slide">
 					<div class="slide_content">
-						<div class="slide_title">Долго,дорого,  скурпулёзно.</div>
-						<p>Математически выверенный дизайн<br> для   вашего сайта или мобильного приложения. </p>
+						<div class="slide_title">Долго, дорого,<br> скурпулёзно.
+						</div>
+						<p>Математически выверенный дизайн<br> для   вашего сайта или мобильного приложения.
+						</p>
 						<a class="btn but_more" href="#">Узнать больше</a>
 					</div>
-				</section>
-				<section class="slide">
+				  </section>
+				  <section class="slide">
+				  <div class="slide_content">
 					<div class="slide_title">Любите ли вы математику, как любим ее мы?</div>
 					<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
 					<div class="bott_block_slider">
 						<a class="btn but_more" href="#">Узнать больше</a>
 					</div>
-				</section>
-				<section class="slide">
-					<div class="slide_title">Только наркотики, только хардкор!</div>
+					</div>
+				  </section>
+				  <section class="slide">
+				  <div class="slide_content">
+					<div class="slide_title">Только наркотики,<br> только хардкор!</div>
 					<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
 					<div class="bott_block_slider">
 						<a class="btn but_more" href="#">Узнать больше</a>
 					</div>
-				</section>
-				<input type="radio" id="slide_1" name="toggle" checked>
-				<input type="radio" id="slide_2" name="toggle">
-				<input type="radio" id="slide_3" name="toggle">
-				<div class="slider-controls">
-					<label for="slide_1"></label>
-					<label for="slide_2"></label>
-					<label for="slide_3"></label>
-				</div>
+					</div>
+				  </section>	
 			</div>
 		</div>
 	</header>
@@ -66,43 +73,43 @@
 					<img src="img/content_1.jpg" width="240px" height="124px" alt="ewqwe">
 					<h2>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a class="btn btn_sale" href="#">заказать</a>
+					<a class="btn btn_sale_1" href="#">заказать</a>
 				</div> 
 				<div class="column">
 					<img src="img/content_2.jpg" width="240px" height="124px" alt="ewqwe">
 					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStrore и Google Play</p>
-					<a class="btn btn_sale" href="#">заказать</a>
+					<a class="btn btn_sale_2" href="#">заказать</a>
 				</div>
 				<div class="column">
 					<img src="img/content_3.jpg" width="240px" height="124px" alt="ewqwe">
 					<h2>Презентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a class="btn btn_sale" href="#">заказать</a>
+					<a class="btn btn_sale_3" href="#">заказать</a>
 				</div>
 			</section>
 			<div class="about_us">
 				<div class="about_us_head clearfix">
           <div class="top_content">
-				    <p><b>Мы — маленькая, но гордаядизайн-студия из Краснодара.</b>
+				    <p><span>Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 					</div>
 					<div class="logo_center">
-					  <img src="img/logo_center.png" width="187" height="118" alt="">
+					  <img src="img/logo_center.png" width="240" height="119" alt="">
 					</div>
 				</div>
 				<div class="bot_content clearfix">
 					<div class="type_orders">
+					<h3>Выполняем заказы на разработку:</h3>
 						<ul>
-							<li class="about_us_caption">Выполняем заказы на разработку:</li>
 							<li>Веб-сайтов любой сложности</li>
 							<li>Мобильных приложений для iOS и Android</li>
 							<li>Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
 					<div class="advantages">
+					  <h3>Как мы работаем:</h3>
 						<ul>
-							<li class="about_us_caption">Как Мы работаем:</li>
 							<li>С самоотдачей 146%</li>
 							<li>Соблюдая сроки на 100%</li>
 							<li>По предоплате 50%</li>
@@ -113,17 +120,14 @@
 				<div class="clients clearfix">
 					<div class="client">
 						<a href="">
-							<img src="img/client_1.png" width="198" height="37"alt="">
 						</a>
 					</div>
 					<div class="client">
 						<a href="#">
-							<img src="img/client_2.png" width="199" height="68"alt="">
 						</a>
 					</div>
 					<div class="client">
 						<a href="#">
-							<img src="img/client_3.png" width="209" height="90"alt="">
 						</a>
 					</div>
 				</div>
@@ -135,9 +139,9 @@
 			<div class="layout_position">
 				<div class="adress">
 					<b class="map_adr">NЁRDS DESIGN STUDIO</b>
-					<p>191186, Санкт-Петербург, 
+					<p>191186, Санкт-Петербург,<br> 
 						ул. Б. Конюшенная, д. 19/8
-						<span class="phon">тел. +7 (812) 275-75-75</span>  
+						<span class="phone">тел. +7 (812) 275-75-75</span>  
 					</p>
 					<a class="btn" href="#">Напишите нам</a>
 				</div>
@@ -146,9 +150,9 @@
 		<div class="layout_position">
 			<section class="footer_social clearfix">
 				<div class="footer_social_btn">
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					<a class="social_btn social_btn_vk" href="#"></a>
+					<a class="social_btn social_btn_fb" href="#"></a>
+					<a class="social_btn social_btn_inst" href="#"></a>
 				</div>
 				<div class="footer_promo">
 					<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
