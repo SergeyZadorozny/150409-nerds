@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="scripts.js">
 </head>
 <body>
 	<header class="top_header" >
@@ -21,7 +22,7 @@
 					<ul>
 					<li><a href="#">студия</a></li>
 					<li><a href="#">клиенты</a></li>
-					<li><a href="#">магазин</a></li>
+					<li><a href="catalog.html">магазин</a></li>
 					<li><a href="#">контакты</a></li>
 				</ul>
 				</nav>
@@ -119,7 +120,7 @@
 				</div>
 				<div class="clients clearfix">
 					<div class="client">
-						<a href="">
+						<a href="#">
 						</a>
 					</div>
 					<div class="client">
@@ -143,16 +144,16 @@
 						ул. Б. Конюшенная, д. 19/8
 						<span class="phone">тел. +7 (812) 275-75-75</span>  
 					</p>
-					<a class="btn" href="#">Напишите нам</a>
+					<a class="btn btn_write" href="#">Напишите нам</a>
 				</div>
 			</div>
 		</div>
 		<div class="layout_position">
 			<section class="footer_social clearfix">
 				<div class="footer_social_btn">
-					<a class="social_btn social_btn_vk" href="#"></a>
-					<a class="social_btn social_btn_fb" href="#"></a>
-					<a class="social_btn social_btn_inst" href="#"></a>
+					<a class="social_btn social_btn_vk" href="#">Вконтакте</a>
+					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+					<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
 				</div>
 				<div class="footer_promo">
 					<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
@@ -160,5 +161,46 @@
 			</section>
 		</div>
 	</footer>
+	<div class="modal_content">
+			<button class="modal_button_close" tupe="button">Закрыть</button>
+			<form class="write_to" action="#" method="post" >
+			  <div class="form_enter">
+				  <label for="name">Ваше имя:</label>
+				  <input type="text" name="name" id="name"  placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="form_enter">
+				  <label for="e-mail">Ваш e-mail:</label>
+				  <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+				</div>
+				<label for="coment">Текст письма:</label>
+				<textarea name="coment" id="coment" cols="1" rows="1" placeholder="В свободной форме"></textarea>
+				<button class="btn form_btn" type="submit">Отправить</button>
+			</form>
+
+		</div>
+		<script>
+			var link=document.querySelector(".btn_write");
+var popup=document.querySelector(".modal_content");
+var close=document.querySelector(".modal_button_close");
+var enter=popup.querySelector("[name=name]");
+
+
+link.addEventListener("click",function(event) {
+	event.preventDefault();
+	popup.classList.add("modal_content_show");
+  enter.focus();
+});
+close.addEventListener("click",function(event) {
+	event.preventDefault();
+popup.classList.remove("modal_content_show");
+});
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal_content_show")) {
+    popup.classList.remove("modal_content_show");
+    }
+  }
+});
+		</script>
 </body>
 </html>
