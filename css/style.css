@@ -34,7 +34,7 @@ a {
 .top_header{
 	background-color: #eeeeee;
 }
-.top_menu {
+.top_menu_index {
 	margin-bottom: 53px;
 }
 .top_menu a{
@@ -75,10 +75,10 @@ a {
 	text-decoration: none;
 }
 .basket::before {
+	content: "";
 	position: absolute;
 	top:28px;
 	left:6px;
-	content: "";
 	width: 15px;
 	height: 15px;
 	background: transparent url(../img/sprite.png) no-repeat;
@@ -239,7 +239,6 @@ a {
 .column {
 	float: left;
 	width: 240px;
-	
 	margin-right: 80px;
 }
 .column:nth-child(3n) {
@@ -248,7 +247,6 @@ a {
 .column img {
 	padding: 0;
 	margin: 0;
-
 }
 .column h2 {
 	padding: 0;
@@ -357,10 +355,10 @@ a {
 	color: #283136;
 }
 .bot_content li::before {
+	content: "";
 	position: absolute;
 	top:30px;
 	left:0;
-	content: "";
 	width: 25px;
 	height:2px;
 	background: url(../img/sprite.png) no-repeat;
@@ -482,8 +480,8 @@ a {
 	width: 240px;
 }
 .social_btn {
-	display: inline-block;
 	position: relative;
+	display: inline-block;
 	width: 62px;
 	height: 62px;
 	margin-right: 23px;
@@ -543,13 +541,14 @@ a {
 	color: #283136;
 }
 /*Catalog*/
-
+.top_menu_catalog {
+	margin-bottom: 71px;
+}
 .catalog_title {
 	margin: 0;
 	padding: 0;
 	width: 700px;
-	min-height: 120px;
-	padding-bottom: 73px;
+	padding-bottom: 92px;
 	margin: 0 auto;
 	margin-bottom: 80px;
 }
@@ -570,15 +569,15 @@ a {
 	
 }
 .filters ul {
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
 .filters li {
+	margin-bottom: 15px;
   font-size: 16px;
 	line-height: 20px;
 	color: #283136;
-	margin-bottom: 15px;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -597,9 +596,9 @@ input[type="radio"] + label::before {
 	top: 0;
 	left: 0;
 	display: block;
-  background-image: url(../img/sprite.png);
 	width: 25px;
   height: 25px;
+  background-image: url(../img/sprite.png);
   background-position: -10px -369px;
  }
  input[type="radio"]:checked + label::before {
@@ -607,9 +606,9 @@ input[type="radio"] + label::before {
 	top: 0;
 	left: 0;
 	display: block;
-	background-image: url(../img/sprite.png);
 	width: 25px;
   height: 25px;
+	background-image: url(../img/sprite.png);
   background-position: -10px -414px;
 }
 input[type="checkbox"] + label {
@@ -624,9 +623,9 @@ input[type="checkbox"] + label::before {
 	top: 0;
 	left: 0;
 	display: block;
-  background-image: url(../img/sprite.png);
 	width: 23px;
   height: 23px;
+  background-image: url(../img/sprite.png);
   background-position: -10px -200px;
  }
  input[type="checkbox"]:checked + label::before {
@@ -634,12 +633,11 @@ input[type="checkbox"] + label::before {
 	top: 0;
 	left: 0;
 	display: block;
-	background-image: url(../img/sprite.png);
 	width: 27px;
   height: 23px;
+	background-image: url(../img/sprite.png);
   background-position: -10px -243px;
 }
-
 .grid {
 	margin-bottom: 45px;
 }
@@ -671,10 +669,10 @@ fieldset {
 	padding: 0;
 }
 legend {
+	margin-bottom: 10px;
 	font-size: 18px;
 	line-height: 30px;
 	text-transform: uppercase;
-	margin-bottom: 10px;
 }
 .range_filter{
     width:240px;
@@ -691,9 +689,9 @@ legend {
     overflow:hidden;
 }
 .scale {
-    margin-top:39px;
-    height:2px;
-    background:#d7dcde;
+	height:2px;
+  margin-top:39px;
+  background:#d7dcde;
 }
 .scale .bar {
     height:2px;
@@ -706,9 +704,9 @@ legend {
     width:4px;
     height:4px;
     border:8px solid white;
+    border-radius:50%;
     background:#ababab;
     cursor:pointer;
-    border-radius:50%;
 }
 .min_toggle{
     left:20px;
@@ -724,12 +722,12 @@ legend {
     padding:8px 10px;
     margin-left:10px;
     border:none;
+    border-radius:5px;
     background:#34495e;
     font-size:16px;
     font-family:"Roboto","Arial", sans-serif;
     text-align:center;
     color:#283136;
-    border-radius:5px;
     color:white;
 }
 .price_controls input {
@@ -739,9 +737,6 @@ legend {
 .price_controls .min_price{
     margin-right:14px;
 }
-
-
-
 .center_panel {
 	float:right;
 	width: 560px;
@@ -806,10 +801,10 @@ legend {
 	position: absolute;
 	top: 50%;
 	left: 30%;
-	transform: translate(-50%,-50%);
-	background-image:url(../img/sprite.png);
 	width: 11px;
   height: 10px;
+	transform: translate(-50%,-50%);
+	background-image:url(../img/sprite.png);
   background-position: -10px -10px;
   opacity: 0.3;
 }
@@ -818,10 +813,10 @@ legend {
 	position: absolute;
 	top: 50%;
 	left: 30%;
-	transform: translate(-50%,-50%);
-	background-image:url(../img/sprite.png);
 	width: 11px;
   height: 10px;
+	transform: translate(-50%,-50%);
+	background-image:url(../img/sprite.png);
   background-position: -10px -40px;
 }
 .up::after {
@@ -829,10 +824,10 @@ legend {
 	position: absolute;
 	top: 50%;
 	left: 70%;
-	transform: translate(-50%,-50%);
-	background-image:url(../img/sprite.png);
 	width: 11px;
   height: 10px;
+	transform: translate(-50%,-50%);
+	background-image:url(../img/sprite.png);
   background-position: -10px -70px;
   opacity: 0.3;
 }
@@ -841,10 +836,10 @@ legend {
 	position: absolute;
 	top: 50%;
 	left: 70%;
-	transform: translate(-50%,-50%);
-	background-image:url(../img/sprite.png);
 	width: 11px;
   height: 10px;
+	transform: translate(-50%,-50%);
+	background-image:url(../img/sprite.png);
   background-position: -10px -100px;
 }
 .down:hover::after {
@@ -964,12 +959,12 @@ legend {
 	height: 38px;
 	padding: 0 9px;
 	margin-right: 11px;
-	color: #000000;
-  text-decoration: none;
+  font-size: 12px;
 	line-height: 38px;
 	text-align: center;
   vertical-align: middle;
-	font-size: 12px;
+	color: #000000;
+  text-decoration: none;
 	border-radius: 3px;
 	background-color: #f1f1f1;
 }
@@ -1006,10 +1001,13 @@ legend {
 .modal_content {
 	position: absolute;
 	display: none;
-	top: 1605px;/*276px*/
+	top: 1605px;
 	left: 50%;
 	width: 460px;
-	padding: 55px 90px 49px 80px;
+	padding-top: 55px;
+	padding-right: 90px;
+	padding-bottom: 49px;
+	padding-left: 80px;
 	margin-left: -315px;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
@@ -1023,12 +1021,12 @@ legend {
 	right: 5px;
 	width: 41px;
 	height: 41px;
+	font-size: 0;
 	border-radius: 50%;
 	background-color: #fb565a;
 	border: 0;
 	outline: 0;
 	cursor: pointer;
-	font-size: 0;
 }
 .modal_content label {
 	display: block;

@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="top_header" >
 		<div class="layout_position">
-			<div class="top_menu clearfix">
+			<div class="top_menu top_menu_catalog clearfix">
 				<div class="top_logo">
 					<a href="index.html"><img src="img/top_logo.png" width="111" height="24" alt="Нёрдс"></a>
 				</div>
@@ -267,29 +267,6 @@
 			</form>
 
 		</div>
-		<script>
-			var link=document.querySelector(".btn_write");
-var popup=document.querySelector(".modal_content");
-var close=document.querySelector(".modal_button_close");
-var enter=popup.querySelector("[name=name]");
-
-
-link.addEventListener("click",function(event) {
-	event.preventDefault();
-	popup.classList.add("modal_content_show");
-  enter.focus();
-});
-close.addEventListener("click",function(event) {
-	event.preventDefault();
-  popup.classList.remove("modal_content_show");
-});
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (popup.classList.contains("modal_content_show")) {
-    popup.classList.remove("modal_content_show");
-    }
-  }
-});
-</script>
+		<script src="js/scripts.min.js"></script>
 	</body>
 	</html>
